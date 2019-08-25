@@ -3,7 +3,7 @@ import React from 'react';
 export default function TabPrices() {
 	return(
 		<svg xmlns="http://www.w3.org/2000/svg" 
-		class="tab-icon-prices" 
+		className="tab-icon-prices" 
 		viewBox="0 0 63 48" 
 		focusable="true"><title />
 		<g id="icon-price-tag" >

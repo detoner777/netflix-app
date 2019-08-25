@@ -153,7 +153,7 @@ const FooterContainer = styled.footer`
 }
 /* Toggle Language Content */
 .lang-toggle {
-    margin-left: 14.7%;
+    margin-left: 14.8%;
     position: absolute;
     margin-top: -3.1rem;
     cursor: pointer;

@@ -4,6 +4,8 @@ import { Button } from './Button';
 import { Icon } from 'react-icons-kit';
 import {cross} from 'react-icons-kit/icomoon/cross';
 import {checkmark} from 'react-icons-kit/icomoon/checkmark'
+import {} from 'react-media-query';
+
 
 function TabContentThree() {
     return(

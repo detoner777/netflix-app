@@ -21,21 +21,26 @@ class TabComponent extends Component {
 				<TabList className="tab-nav-container">
 					<Tab className={`${this.state.tabIndex === 0 ? 'tab-selected active' : null}`} >
 						<TabDoor />
-						<p style={{marginBottom: '1rem'}}><strong>No commitments <br />
+						<p className="lgScreen" style={{marginBottom: '1rem'}}><strong>No commitments <br />
 							Cancel oline at anytime</strong>
 						</p>
+						<br/>
+						<span className="mdScreen" style={{marginTop: '0.4rem'}}>Cancel</span>
 					</Tab>	
 					<Tab className={`${this.state.tabIndex === 1 ? 'tab-selected active' : null}`}>
 						<TabDevices />
-						<p style={{marginTop: '-5.3125rem'}}>
+						<p className='lgScreen' style={{marginTop: '-5.3125rem'}}>
 						<strong>Watch anywher</strong>
-						</p>
+						</p>  
+						<span className="mdScreen" style={{ marginTop: '-5.3125rem'}}>Devices</span>
 					</Tab>	
 					<Tab className={`${this.state.tabIndex === 2 ? 'tab-selected active' : null}`}>
 						<TabPrices />
-						<p style={{marginTop: '0.2rem'}}>
+						<p className='lgScreen' style={{marginTop: '0.2rem'}}>
 						<strong>Pick your price</strong>
 						</p>
+						<br />
+						<span className="mdScreen">Price</span>
 					</Tab>	
 				</TabList>
 				{/* Tabs Content */}
