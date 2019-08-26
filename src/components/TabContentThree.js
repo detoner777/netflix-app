@@ -4,7 +4,7 @@ import { Button } from './Button';
 import { Icon } from 'react-icons-kit';
 import {cross} from 'react-icons-kit/icomoon/cross';
 import {checkmark} from 'react-icons-kit/icomoon/checkmark'
-import {} from 'react-media-query';
+import {generateMedia} from 'styled-media-query';
 
 
 function TabContentThree() {
@@ -78,6 +78,12 @@ function TabContentThree() {
 }
 export default TabContentThree;
 
+//Media
+const customMedia = generateMedia({
+    lgDesktop: '1350px',
+    mdDesktop: '1000px'
+})
+
 //Main Container
 const TabConteainer = styled.div`
     backround: var(--main-deep-dark);
@@ -91,10 +97,18 @@ const TabConteainer = styled.div`
         display: grid;
         grid-template-columns: repeat(12, 2fr);
         padding: 3rem  0 0;
+        ${customMedia.lessThan('lgDesktop')`
+            grid-template-columns: 1fr;
+            row-gap: 1.5rem;
+            text-align: center;  	
+		`}
     }
 
     span {
         grid-column: 3/9;
+        ${customMedia.lessThan('lgDesktop')`
+            grid-column: 1 / -1;
+		`}
     }
 
     .btn {
@@ -103,6 +117,12 @@ const TabConteainer = styled.div`
         margin-left: 3rem;
         margin-right: 5.1rem;
         width: 10rem;
+        ${customMedia.lessThan('mdDesktop')`
+            grid-column: 1 / -1;
+            margin-left: 30%;
+            margin-right: 30%; 	
+		`}
+        
     }
 
     // Tab Bottom Content
@@ -142,7 +162,4 @@ const TabConteainer = styled.div`
     table tbody tr:nth-child(even) {
         background: #222;
     }
-
-
-
 `;

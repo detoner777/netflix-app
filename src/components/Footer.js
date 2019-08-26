@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {Icon} from 'react-icons-kit';
 import { iosWorld } from 'react-icons-kit/ionicons/iosWorld';
 import { arrowSortedDown } from 'react-icons-kit/typicons/arrowSortedDown';
-
+import {generateMedia} from 'styled-media-query';
 
 class Footer extends Component {
     state = {
@@ -111,6 +111,12 @@ class Footer extends Component {
 
 export default Footer;
 
+//Media
+const customMedia = generateMedia({
+    lgDesktop: '1350px',
+    tablet: '740px'
+})
+
 
 const FooterContainer = styled.footer`
     background: var(--main-deep-dark);
@@ -125,6 +131,10 @@ const FooterContainer = styled.footer`
         overflow: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        ${customMedia.lessThan('tablet')`
+            grid-template-columns: repeat(2, 1fr);
+                      	
+		`}
    }
 
    ul li {
