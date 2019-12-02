@@ -103,8 +103,7 @@ class Footer extends Component {
              </div>
              )}
              <span style={{marginLeft: '15%', fontSize: '0.9rem'}}>Netflix Canada</span>
-            </FooterContainer>
-            
+            </FooterContainer>  
         );
     }
 }
