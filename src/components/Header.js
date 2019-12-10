@@ -103,7 +103,6 @@ const HeaderComponent = styled.div`
 	}
 	.main-offer-btn {
 		
-	
 		${customMedia.lessThan("lgDesctop")`
 		margin: 0 33%;
 		font-size: 1,5rem;
