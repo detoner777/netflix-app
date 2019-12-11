@@ -17,7 +17,7 @@ class LoginForm extends Component {
               <label>Password</label>
             </div>
             <div className="input-container">
-              <a type="submit">Sign In</a>
+              <Button type="submit">Sign In</Button>
             </div>
           </form>
         </div>
@@ -76,4 +76,26 @@ const FormContainer = styled.div`
     top: 0.4375rem;
     font-size: 0.7rem;
   }
+
+  input:focus {
+    outline: none;
+  }
+`;
+
+//Button
+
+const Button = styled.button`
+  color: #fff;
+  background: rgba(229, 9, 20);
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.125rem;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  transition: opacity 0.2s ease-in;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 1rem 0;
 `;
