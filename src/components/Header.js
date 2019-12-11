@@ -13,8 +13,12 @@ class Header extends React.Component {
     return (
       <HeaderComponent className="header-container">
         <div className="header-top">
-          <Logo src={logo} />
-          <NavLink className="signIn-btn">Sign In</NavLink>
+          <Link to="/">
+            <Logo className="logo" src={logo} />
+          </Link>
+          <NavLink to="/login" className="btn signIn-btn">
+            Sign In
+          </NavLink>
         </div>
         <div className="header-content">
           <Title>See what's next</Title>
