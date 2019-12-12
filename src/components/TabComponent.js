@@ -27,14 +27,14 @@ class TabComponent extends Component {
             }`}
           >
             <TabDoor />
-            <p className="lgScreen" style={{ marginBottom: "1rem" }}>
+            <p className="lgScreen" style={{ marginBottom: "-1.5rem" }}>
               <strong>
                 No commitments <br />
                 Cancel oline at anytime
               </strong>
             </p>
             <br />
-            <span className="mdScreen" style={{ marginTop: "0.4rem" }}>
+            <span className="mdScreen" style={{ marginTop: "1.7rem" }}>
               Cancel
             </span>
           </Tab>
@@ -44,10 +44,10 @@ class TabComponent extends Component {
             }`}
           >
             <TabDevices />
-            <p className="lgScreen" style={{ marginTop: "-1.3125rem" }}>
+            <p className="lgScreen" style={{ marginTop: "-2.2125rem" }}>
               <strong>Watch anywher</strong>
             </p>
-            <span className="mdScreen" style={{ marginTop: "-5.3125rem" }}>
+            <span className="mdScreen" style={{ marginTop: "-3.9rem" }}>
               Devices
             </span>
           </Tab>
@@ -57,11 +57,13 @@ class TabComponent extends Component {
             }`}
           >
             <TabPrices />
-            <p className="lgScreen" style={{ marginTop: "0.2rem" }}>
+            <p className="lgScreen" style={{ marginTop: "-0.3rem" }}>
               <strong>Pick your price</strong>
             </p>
             <br />
-            <span className="mdScreen">Price</span>
+            <span className="mdScreen" style={{ marginTop: "-0.2rem" }}>
+              Price
+            </span>
           </Tab>
         </TabList>
         {/* Tabs Content */}
