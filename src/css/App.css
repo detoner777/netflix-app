@@ -57,6 +57,12 @@ a {
   url(../images/bg.jpg) no-repeat center center/cover;
 }
 
+@media (max-width: 640px) {
+  .main-login-container {
+    background: #0000;
+  }
+}
+
 
 .main-login-container::after {
   content: '';
@@ -73,4 +79,11 @@ a {
   position: relative;
   height: 10rem;
   z-index: 1;
+  
+  
+}
+@media (max-width: 640px) {
+  .header-top {
+    background: #0000;
+  }
 }
